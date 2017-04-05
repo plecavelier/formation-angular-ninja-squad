@@ -10,7 +10,7 @@ import { PonyModel } from '../models/pony.model';
 export class PonyComponent implements OnInit {
 
   @Input() ponyModel: PonyModel;
-  @Output() ponyClicked: EventEmitter<PonyModel> = new EventEmitter<PonyModel>();
+  @Output() ponyClicked = new EventEmitter<PonyModel>();
 
   constructor() { }
 
