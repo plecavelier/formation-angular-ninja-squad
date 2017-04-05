@@ -1,8 +1,9 @@
-/**
- * Created by Plecavelier on 05/04/2017.
- */
+import { PonyModel } from './pony.model';
 
 export interface RaceModel {
 
+  id: number;
   name: string;
+  startInstant: string;
+  ponies: PonyModel[];
 }
