@@ -13,6 +13,7 @@ import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
+import { UserService } from './user.service';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { RegisterComponent } from './register/register.component';
     ReactiveFormsModule
   ],
   providers: [
-    RaceService
+    RaceService,
+    UserService
   ],
   bootstrap: [AppComponent]
 })
