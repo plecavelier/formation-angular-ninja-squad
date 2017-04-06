@@ -13,4 +13,9 @@ export class UserService {
     return this.http.post('http://ponyracer.ninja-squad.com/api/users', input)
       .map(result => result.json());
   }
+
+  authenticate(credentials: {login: string; password: string}): Observable<UserModel> {
+    return this.http.post('http://ponyracer.ninja-squad.com/api/users/authentication', credentials)
+      .map(result => result.json());
+  }
 }
